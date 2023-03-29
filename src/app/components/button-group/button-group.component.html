@@ -1,38 +1,25 @@
-  <span style="position: absolute; width: 300px; margin-left: 10px; font-family: Poppins; font-size: 30px">SIMPLY MUSIC</span>
-
-<div class="customCentering">
-  <button #homeButton class="customButton" style="" [ngStyle]="{'color': this.activeButtons.home ? 'orange' : 'black'}"  (click)="checkIfActive('home'); debug('');" >HOME</button>
-  <button #tracksButton class="customButton"  [ngStyle]="{'color': this.activeButtons.tracks ? 'orange' : 'black'}" (click)="checkIfActive('tracks'); debug('')">TRACKS</button>
-  <button #contactButton class="customButton" [ngStyle]="{'color': this.activeButtons.contact ? 'orange' : 'black'}" (click)="checkIfActive('contact');" >CONTACT</button>
-  <button #aboutMe class="customButton" [ngStyle]="{'color': this.activeButtons.aboutMe ? 'orange' : 'black'}" (click)="checkIfActive('aboutMe');" >ABOUT ME</button>
+<!--<span  class="customCentering" style="font-family: Poppins; font-size: 60px">SIMPLY MUSIC</span>-->
 
 
-</div>
+  <div class="customCentering">
 
 
-<!--<nav class="navbar navbar-expand-lg navbar-light bg-light">-->
-<!--  <span style="position: absolute; width: 300px; margin-left: 10px; font-family: Poppins; font-size: 30px">SIMPLY MUSIC</span>-->
+    <button #homeButton class="customButton"
+            [ngStyle]="{'border-bottom': this.activeButtons.home ? '2px solid rgb(255,255,255)' : '0px solid rgb(255,255,255)'}"
+            (click)="checkIfActive('home'); debug('');">HOME
+    </button>
+    <button #tracksButton class="customButton"
+            [ngStyle]="{'border-bottom': this.activeButtons.tracks ? '2px solid rgb(255,255,255)' : '0px solid rgb(255,255,255)'}"
+            (click)="checkIfActive('tracks'); debug('')">TRACKS
+    </button>
+    <button #contactButton class="customButton"
+            [ngStyle]="{'border-bottom': this.activeButtons.contact ? '2px solid rgb(255,255,255)' : '0px solid rgb(255,255,255)'}"
+            (click)="checkIfActive('contact');">CONTACT
+    </button>
+    <button #aboutMe class="customButton"
+            [ngStyle]="{'border-bottom': this.activeButtons.aboutMe ? '2px solid rgb(255,255,255)' : '0px solid rgb(255,255,255)'}"
+            (click)="checkIfActive('aboutMe');">ABOUT ME
+    </button>
 
-<!--  <div class="container-fluid">-->
-<!--    <div class="collapse navbar-collapse justify-content-center">-->
-<!--      <ul class="navbar-nav mb-2 mb-lg-0">-->
-<!--        <div style="margin-top: 5px">-->
+  </div>
 
-<!--          <button #homeButton class="customButton" style="" [ngStyle]="{'color': this.activeButtons.home ? 'orange' : 'black'}"  (click)="checkIfActive('home'); debug('');" >HOME</button>-->
-<!--          <button #tracksButton class="customButton"  [ngStyle]="{'color': this.activeButtons.tracks ? 'orange' : 'black'}" (click)="checkIfActive('tracks'); debug('')">TRACKS</button>-->
-<!--          <button #contactButton class="customButton" [ngStyle]="{'color': this.activeButtons.contact ? 'orange' : 'black'}" (click)="checkIfActive('contact');" >CONTACT</button>-->
-<!--          <button #aboutMe class="customButton" [ngStyle]="{'color': this.activeButtons.aboutMe ? 'orange' : 'black'}" (click)="checkIfActive('aboutMe');" >ABOUT ME</button>-->
-
-
-<!--        </div>-->
-<!--      </ul>-->
-<!--    </div>-->
-<!--  </div>-->
-<!--</nav>-->
-
-
-
-<!--<button #homeButton class="customButton" [ngStyle]="{'color': this.activeButtons.home ? 'orange' : 'black'}"  (click)="checkIfActive('home'); debug('');" >HOME</button>-->
-<!--<button #tracksButton class="customButton"  [ngStyle]="{'color': this.activeButtons.tracks ? 'orange' : 'black'}" (click)="checkIfActive('tracks'); debug('')">TRACKS</button>-->
-<!--<button #contactButton class="customButton" [ngStyle]="{'color': this.activeButtons.contact ? 'orange' : 'black'}" (click)="checkIfActive('contact');" >CONTACT</button>-->
-<!--<button #aboutMe class="customButton" [ngStyle]="{'color': this.activeButtons.aboutMe ? 'orange' : 'black'}" (click)="checkIfActive('aboutMe');" >ABOUT ME</button>-->

@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import {Directive, NgModule} from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -8,7 +8,6 @@ import { HomeComponent } from './pages/home/home.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { TracksComponent } from './pages/tracks/tracks.component';
 import { AboutMeComponent } from './pages/about-me/about-me.component';
-
 
 @NgModule({
   declarations: [
@@ -27,4 +26,7 @@ import { AboutMeComponent } from './pages/about-me/about-me.component';
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+
+
+}

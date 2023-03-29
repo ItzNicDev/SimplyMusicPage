@@ -1,52 +1,59 @@
 /*defining all custom css styling here*/
 /**************************************/
 
+
+@font-face {
+  font-family: "OmegaCentaur";
+  src: url("src/assets/fonts/OmegaCentauri.ttf");
+}
+
 body {
 
 }
 
 .customButton {
-  transition: 0.3s;
-  border-radius: 5px;
 
-  color: black;
+  color: white;
   border: none;
   background: none;
   margin-left: 20px;
-  font-size: 30px;
+  font-size: 20px;
 
   font-family: Poppins;
 
-}
 
+}
 
 
 .customButton:hover {
   /*transition: 0.4s;*/
 
 
-
-  /*background-image: url('../../../assets/img/buttonBackground.png');*/
-  /*background-repeat: no-repeat;*/
-  /*background-size: 120px;*/
-  /*background-position-y: 11px;*/
 }
 
 .customButtonStart:hover {
   transition: 0.5s;
-  color:orange;
+  color: orange;
 }
 
 .customCentering {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+
+  height: 60px;
   display: flex;
-  margin-top: 20px;
-  margin-bottom: 10px;
   align-content: center;
   align-items: center;
   justify-content: center;
   justify-items: center;
   text-align: center;
+  background: linear-gradient(90.07deg, #FF881B -0.47%, #8F00A6 99.17%);
+  /*background-image: url("/assets/img/buttonGroupBackground.png");*/
+
+
 }
+
 
 
 

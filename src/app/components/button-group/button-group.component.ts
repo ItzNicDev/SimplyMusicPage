@@ -121,11 +121,17 @@ export class ButtonGroupComponent implements OnInit {
       localStorage.setItem("currentRoute", "/aboutMe")
     }
   }
+
+
+
+
   ngOnInit() {
     this.activeButtons = JSON.parse(localStorage.getItem('activeButton') ?? '');
 
     let currentRoute: any = localStorage.getItem("currentRoute");
     this.routes.navigate(currentRoute)
   }
+
+
 
 }
