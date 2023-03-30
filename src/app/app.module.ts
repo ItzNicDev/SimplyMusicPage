@@ -9,6 +9,9 @@ import { ContactComponent } from './pages/contact/contact.component';
 import { TracksComponent } from './pages/tracks/tracks.component';
 import { AboutMeComponent } from './pages/about-me/about-me.component';
 
+import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
+import { LatestReleasesComponent } from './components/latest-releases/latest-releases.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -17,6 +20,7 @@ import { AboutMeComponent } from './pages/about-me/about-me.component';
     ContactComponent,
     TracksComponent,
     AboutMeComponent,
+    LatestReleasesComponent,
   ],
   imports: [
     // RouterModule.forRoot(rout),
@@ -27,6 +31,10 @@ import { AboutMeComponent } from './pages/about-me/about-me.component';
   bootstrap: [AppComponent]
 })
 export class AppModule {
+
+
+
+
 
 
 }

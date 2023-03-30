@@ -1,0 +1,75 @@
+.latest-release-c {
+
+
+  margin-top: 100px;
+  background: #555555;
+  width: 70%;
+  height: 800px;
+  border-radius: 15px;
+
+}
+
+.latest-release-frame {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+
+.mainRelease {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  float: left;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.oldReleases {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  float: left;
+  margin-top: 110px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.breaklineText {
+  position: absolute;
+  float: left;
+  margin-top: 400px;
+  margin-left: 20px;
+  font-family: Poppins;
+  color: white;
+  font-size: 30px;
+}
+
+.breakLine {
+  color: #ffffff;
+  border: solid #ffffff 3px;
+  border-radius: 5px;
+  margin-top: 420px;
+  margin-left: 280px;
+}
+
+
+
+
+
+.vinyl {
+  transition: 1s;
+border-radius: 50%;
+  position: absolute;
+  display: block;
+  float: left;
+  margin-left: 20px;
+  margin-top: 20px;
+  width: 300px;
+
+}
+
+.mainRelease:hover ~ .vinyl {
+  transition: 1s;
+  margin-left: 160px;
+}
+

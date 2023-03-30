@@ -1,8 +1,9 @@
 import {Component, Directive} from '@angular/core';
 
 import {NgbToast} from "ngb-toast";
-import {ChildrenOutletContexts} from "@angular/router";
-import {slideInAnimation} from "./animations";
+import {ChildrenOutletContexts, RouterOutlet} from "@angular/router";
+
+import {fader} from '../app/animations'
 
 
 
@@ -11,11 +12,14 @@ import {slideInAnimation} from "./animations";
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
   animations: [
-    slideInAnimation
+    fader
   ]
 })
 
 export class AppComponent {
-  title = 'app';
+
+  prepareRoute(outlet: RouterOutlet) {
+    return outlet && outlet.activatedRouteData && outlet.activatedRouteData['animation'];
+  }
 
 }

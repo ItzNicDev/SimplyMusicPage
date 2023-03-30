@@ -34,6 +34,13 @@
 }
 
 
+main {
+  text-align: center;
+  position: relative;
+
+  /*background: linear-gradient(152.46deg, #D54424 0%, #C74126 0.01%, #07193C 97.54%);*/
+}
+
 body {
   background-color: #F0F0F0;
 }
@@ -54,3 +61,5 @@ html
   justify-content: center;
   background-color: transparent;
 }
+
+.customCentering {}

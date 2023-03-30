@@ -1,4 +1,6 @@
 
+
+
 .ArtistName {
   font-family: OmegaCentauri;
   font-size: 150px;
@@ -21,7 +23,7 @@
   /*display: inline-block;*/
   padding-inline: 30px;
   background: #e8e8e8;
-  box-shadow: 7px 7px 12px rgba(34, 34, 34, 0.25), -7px -7px 6px rgba(255, 255, 255, 0.25);
+  box-shadow: 7px 7px 12px rgba(34, 34, 34, 0.25), -7px -7px 6px rgba(255, 255, 255, 0.53);
   border-radius: 13px;
   width: auto;
   height: 60px;
@@ -81,4 +83,26 @@ transform: translateY(-8px);
 .applemusicIcon:hover {
   transition: 1s;
   fill: #de4e4e;
+}
+
+
+.goDownButton {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  border: none;
+  margin-top: 250px;
+  background: #e8e8e8;
+  box-shadow: 4px 4px 6px rgba(34, 34, 34, 0.25), -4px -4px 6px rgba(255, 255, 255, 0.65);
+  font-family: Poppins;
+  transition: transform 0.45s ease;
+
+}
+
+.goDownButton:hover {
+
+  transform: scale(115%);
+  transition: 0.45s;
+  background: #eeeeee;
+
 }

@@ -10,4 +10,11 @@ export class HomeComponent {
     console.log(pagelink)
   }
 
+
+  scrollDown(y: number) {
+    window.scrollTo({
+      top: y,
+      behavior: "smooth"});
+
+  }
 }
