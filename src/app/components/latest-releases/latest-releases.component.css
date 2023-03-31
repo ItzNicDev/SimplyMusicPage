@@ -12,7 +12,7 @@
 .latest-release-frame {
   display: flex;
   justify-content: center;
-  margin-bottom: 100px;
+  margin-top: 100px;
 }
 
 .mainRelease {
@@ -58,17 +58,17 @@
 
 .vinyl {
   transition: 1s;
-border-radius: 50%;
+  border-radius: 50%;
   position: absolute;
   display: block;
   float: left;
-  margin-left: 20px;
+  margin-left: 50px;
   margin-top: 20px;
   width: 300px;
 
 }
 
-.mainRelease:hover ~ .vinyl {
+.vinyl:hover {
   transition: 1s;
   margin-left: 160px;
 }

@@ -11,6 +11,8 @@ import { AboutMeComponent } from './pages/about-me/about-me.component';
 
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { LatestReleasesComponent } from './components/latest-releases/latest-releases.component';
+import { NewestReleaseComponent } from './components/latest-releases/newest-release/newest-release.component';
+import { OlderReleasesComponent } from './components/latest-releases/older-releases/older-releases.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +23,8 @@ import { LatestReleasesComponent } from './components/latest-releases/latest-rel
     TracksComponent,
     AboutMeComponent,
     LatestReleasesComponent,
+    NewestReleaseComponent,
+    OlderReleasesComponent,
   ],
   imports: [
     // RouterModule.forRoot(rout),
