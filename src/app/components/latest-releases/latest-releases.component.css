@@ -1,38 +1,21 @@
 .latest-release-c {
-
-
   margin-top: 100px;
-  background: #555555;
-  width: 70%;
+  width: 90%;
   height: 800px;
-  border-radius: 15px;
+  background: linear-gradient(152.46deg, #D54424 0%, #C74126 0.01%, #07193C 97.54%);;
+  border-radius: 10px;
+  box-shadow: 8px 8px 4px rgba(0, 0, 0, 0.25);
 
 }
+
 
 .latest-release-frame {
   display: flex;
   justify-content: center;
   margin-top: 100px;
+  margin-bottom: 50px;
 }
 
-.mainRelease {
-  position: relative;
-  width: 300px;
-  height: 300px;
-  float: left;
-  margin-top: 20px;
-  margin-left: 20px;
-}
-
-.oldReleases {
-  position: relative;
-  width: 200px;
-  height: 200px;
-  float: left;
-  margin-top: 110px;
-  margin-left: 50px;
-  margin-right: 50px;
-}
 
 .breaklineText {
   position: absolute;
@@ -53,23 +36,61 @@
 }
 
 
+.frame {
+  display: flex;
+  flex-direction: row;
+}
+
+.mainRelease {
+  transition: 1s;
+  position: absolute;
+  width: 300px;
+  float: left;
+  order: 2;
+  margin-top: 30px;
+  margin-left: 30px;
+}
 
 
+.mainRelease:hover + .vinyl {
+  transition: 1s;
+  margin-left: 180px;
+
+}
 
 .vinyl {
   transition: 1s;
-  border-radius: 50%;
-  position: absolute;
-  display: block;
-  float: left;
-  margin-left: 50px;
-  margin-top: 20px;
   width: 300px;
+  margin-top: 30px;
+  margin-left: 30px;
+}
+
+.mainRelease:hover {
+  border-radius: 10px;
+  box-shadow: 8px 8px 4px rgba(0, 0, 0, 0.25);
+}
+
+
+.newestRelease-SongName {
+  position: absolute;
+
+  margin-left: 500px;
+  margin-top: 50px;
+  letter-spacing: 0px;
+
+  font-family: Poppins;
+  color: white;
+  font-size: 30px;
 
 }
 
-.vinyl:hover {
-  transition: 1s;
-  margin-left: 160px;
+.newestRelease-ArtistName {
+  position: absolute;
+  margin-left: 500px;
+  margin-top: 90px;
+  font-size: 15px;
+  font-family: Poppins;
+  color: #b7b7b7;
 }
+
 
