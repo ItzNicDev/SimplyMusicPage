@@ -8,13 +8,9 @@ import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 import {BrowserModule} from "@angular/platform-browser";
 
 const routes: Routes = [
-  // {path: '', component: HomeComponent},
-
-
-
+  {path: '', component: HomeComponent, data: {animation: 'home'}},
   {path: 'home', component: HomeComponent, data: {animation: 'home'}},
   {path: 'tracks', component: TracksComponent, data: {animation: 'tracks'}},
-
   {path: 'contact', component: ContactComponent, data: {animation: 'contact'}},
   {path: 'aboutMe', component: AboutMeComponent, data: {animation: 'aboutMe'}}
 ];

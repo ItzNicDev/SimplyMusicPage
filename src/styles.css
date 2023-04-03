@@ -14,7 +14,7 @@
 }
 
 ::-webkit-scrollbar {
-  width: 5px;
+  width: 0px;
 }
 
 /* Track */
@@ -38,11 +38,12 @@ main {
   text-align: center;
   position: relative;
 
-  /*background: linear-gradient(152.46deg, #D54424 0%, #C74126 0.01%, #07193C 97.54%);*/
+  /*background: linear-gradient(172.95deg, rgb(236, 58, 58) 22.42%, rgba(0, 11, 79, 0.69) 70.22%);*/
 }
 
 body {
   background-color: #F0F0F0;
+
 }
 
 html

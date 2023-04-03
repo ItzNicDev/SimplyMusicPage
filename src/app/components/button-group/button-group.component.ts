@@ -1,4 +1,4 @@
-import {Component, ElementRef, Input, OnInit, ViewChild} from '@angular/core';
+import {Component, ElementRef, HostListener, Input, OnInit, ViewChild} from '@angular/core';
 import {filter} from 'rxjs/operators'
 import {Router, Routes} from "@angular/router";
 
@@ -47,8 +47,9 @@ export class ButtonGroupComponent implements OnInit {
 
   @Input() object: Object = {}
 
-  getData(object: object): void {
-  }
+
+
+
 
   // private subscription: Subscription;
 
@@ -65,7 +66,25 @@ export class ButtonGroupComponent implements OnInit {
   @ViewChild('aboutMe', {static: true}) aboutMeButton: ElementRef;
 
 
-  checkIfActive(id: string) {
+
+
+  hideNavbar = false;
+  scrollPosition = 0;
+
+  @HostListener('window:scroll', ['$event'])
+  onWindowScroll(event: any) {
+    this.scrollPosition = window.pageYOffset;
+    if (this.scrollPosition > 920) {
+      this.hideNavbar = true;
+    } else {
+      this.hideNavbar = false;
+    }
+  }
+
+
+
+
+checkIfActive(id: string) {
 
     this.activeButtons = {home: false, tracks: false, contact: false, aboutMe: false,};
 

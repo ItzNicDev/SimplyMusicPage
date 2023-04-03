@@ -1,7 +1,8 @@
 <!--<span  class="customCentering" style="font-family: Poppins; font-size: 60px">SIMPLY MUSIC</span>-->
 
 
-  <div class="customCentering">
+  <div [ngClass]="{'navbar-hidden': hideNavbar == true }" class="customCentering">
+<!--    <div [ngClass]="[hideNavbar ? 'navbar-hide' : 'navbar-show']" class="customCentering">-->
 
 
     <button #homeButton class="customButton"
