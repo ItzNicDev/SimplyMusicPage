@@ -17,18 +17,15 @@
   width: 0px;
 }
 
-/* Track */
 ::-webkit-scrollbar-track {
   /*background: linear-gradient(0deg, #FF881B -0.47%, #8F00A6 99.17%);*/
   background: #dadada;
 }
 
-/* Handle */
 ::-webkit-scrollbar-thumb {
   background: #808080;
 }
 
-/* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
@@ -46,14 +43,11 @@ body {
 
 }
 
-html
-{
+html {
   /*background:url('assets/img/background.png')no-repeat center center fixed;*/
-
-  background-size:cover;
+  background-size: cover;
 
 }
-
 
 
 .content {
@@ -63,4 +57,5 @@ html
   background-color: transparent;
 }
 
-.customCentering {}
+.customCentering {
+}

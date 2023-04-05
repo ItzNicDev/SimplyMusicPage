@@ -55,9 +55,13 @@
 
 </div>
 
-<button class="goDownButton" (click)="scrollDown(900)">
-  <img src="assets/svg/Arrow.svg" alt="">
+
+  <button [ngStyle]="{'opacity': this.showScrollButton ? '1' : '0'}" class="goDownButton" (click)="scrollDown(900)">
+<!--    <button [ngClass]="{'arrowDown-hide': true}" class="goDownButton" (click)="scrollDown(900)">-->
+
+    <img src="assets/svg/Arrow.svg" alt="">
 </button>
 
 
-<app-latest-releases></app-latest-releases>
+
+<latest-releases></latest-releases>

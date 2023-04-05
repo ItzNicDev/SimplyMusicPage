@@ -154,3 +154,11 @@ margin-top: 130px;
 margin-left: -460px;
 }
 
+
+.arrowDown-hide {
+  opacity: 0;
+}
+
+.arrowDown-show {
+  opacity: 1;
+}

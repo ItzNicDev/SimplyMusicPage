@@ -1,7 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 
 @Component({
-  selector: 'app-latest-releases',
+  selector: 'latest-releases',
   templateUrl: './latest-releases.component.html',
   styleUrls: ['./latest-releases.component.css']
 })

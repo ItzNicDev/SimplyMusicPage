@@ -54,6 +54,8 @@ fill: #727272;
   transition: 0.3s;
   margin-top: 18px;
   font-family: OmegaCentauri;
+  font-size: 17px;
+
   margin-left:-30px;
   cursor: pointer;
   color: white;
@@ -61,5 +63,6 @@ fill: #727272;
 
 .footer-artist-name:hover {
   transition: 0.3s;
+  /*font-size: 19px;*/
   color: #adadad;
 }

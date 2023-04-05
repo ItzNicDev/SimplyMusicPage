@@ -1,4 +1,4 @@
-import {Component} from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {pagelinkEnumList} from "../../enums/pagelink-enums";
 
 @Component({
@@ -6,7 +6,10 @@ import {pagelinkEnumList} from "../../enums/pagelink-enums";
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css']
 })
-export class HomeComponent {
+export class HomeComponent implements OnInit{
+
+  public currentScrollPosition: number = 0;
+public showScrollButton: boolean = true;
   redirect(pagelink: string) {
     console.clear()
     console.log("redirecting to: " + pagelink)
@@ -35,5 +38,18 @@ export class HomeComponent {
       behavior: "smooth"
     });
 
+  }
+  ngOnInit() {
+    window.addEventListener('scroll', () => {
+      const scrollPosition = window.scrollY;
+      this.currentScrollPosition = scrollPosition
+      // console.log(this.currentScrollPosition);
+      if(this.currentScrollPosition >= 700) {
+        this.showScrollButton = false;
+      }
+      if(this.currentScrollPosition <= 700) {
+        this.showScrollButton = true;
+      }
+    });
   }
 }
