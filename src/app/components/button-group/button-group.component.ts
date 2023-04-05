@@ -48,9 +48,6 @@ export class ButtonGroupComponent implements OnInit {
   @Input() object: Object = {}
 
 
-
-
-
   // private subscription: Subscription;
 
   constructor(private routes: Router) {
@@ -66,15 +63,13 @@ export class ButtonGroupComponent implements OnInit {
   @ViewChild('aboutMe', {static: true}) aboutMeButton: ElementRef;
 
 
-
-
   hideNavbar = false;
   scrollPosition = 0;
 
   @HostListener('window:scroll', ['$event'])
   onWindowScroll(event: any) {
     this.scrollPosition = window.pageYOffset;
-    if (this.scrollPosition > 920) {
+    if (this.scrollPosition > 800) {
       this.hideNavbar = true;
     } else {
       this.hideNavbar = false;
@@ -82,9 +77,7 @@ export class ButtonGroupComponent implements OnInit {
   }
 
 
-
-
-checkIfActive(id: string) {
+  checkIfActive(id: string) {
 
     this.activeButtons = {home: false, tracks: false, contact: false, aboutMe: false,};
 
@@ -117,7 +110,6 @@ checkIfActive(id: string) {
     // document.cookie ="Nele";
 
 
-
   }
 
   generateLocalStorageKey() {
@@ -142,15 +134,12 @@ checkIfActive(id: string) {
   }
 
 
-
-
   ngOnInit() {
     this.activeButtons = JSON.parse(localStorage.getItem('activeButton') ?? '');
 
     let currentRoute: any = localStorage.getItem("currentRoute");
     this.routes.navigate(currentRoute)
   }
-
 
 
 }

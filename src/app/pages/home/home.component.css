@@ -62,7 +62,7 @@ transform: translateY(-8px);
 
 .instagramIcon:hover {
   transition: 1s;
-  fill: #8753b7;
+  fill: url(#gradient);
 }
 
 .youtubeIcon:hover {

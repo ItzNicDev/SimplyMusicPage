@@ -13,6 +13,7 @@ import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { LatestReleasesComponent } from './components/latest-releases/latest-releases.component';
 import { NewestReleaseComponent } from './components/latest-releases/newest-release/newest-release.component';
 import { OlderReleasesComponent } from './components/latest-releases/older-releases/older-releases.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { OlderReleasesComponent } from './components/latest-releases/older-relea
     LatestReleasesComponent,
     NewestReleaseComponent,
     OlderReleasesComponent,
+    FooterComponent,
   ],
   imports: [
     // RouterModule.forRoot(rout),
