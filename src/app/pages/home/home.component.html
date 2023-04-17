@@ -6,6 +6,8 @@
 </span>
 
 
+
+
 <div class="iconGroup">
   <div class="embossedRect">
 
@@ -56,11 +58,12 @@
 </div>
 
 
-  <button [ngStyle]="{'opacity': this.showScrollButton ? '1' : '0'}" class="goDownButton" (click)="scrollDown(900)">
+  <button [ngStyle]="{'opacity': this.showScrollButton ? '1' : '0'}" class="goDownButton" (click)="scrollDown(this.yPositionLatestReleaseFrameElement + 30)">
 <!--    <button [ngClass]="{'arrowDown-hide': true}" class="goDownButton" (click)="scrollDown(900)">-->
 
     <img src="assets/svg/Arrow.svg" alt="">
 </button>
+
 
 
 

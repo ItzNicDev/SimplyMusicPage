@@ -10,6 +10,9 @@ export class HomeComponent implements OnInit{
 
   public currentScrollPosition: number = 0;
 public showScrollButton: boolean = true;
+public showFooter: boolean = false;
+
+public yPositionLatestReleaseFrameElement: number = 0;
   redirect(pagelink: string) {
     console.clear()
     console.log("redirecting to: " + pagelink)
@@ -49,7 +52,17 @@ public showScrollButton: boolean = true;
       }
       if(this.currentScrollPosition <= 700) {
         this.showScrollButton = true;
+        this.showFooter = true;
       }
+
+
+      const latestReleaseFrameElement = document.getElementById("latest-release-frame");
+      if (latestReleaseFrameElement) {
+        this.yPositionLatestReleaseFrameElement = latestReleaseFrameElement.offsetTop;
+        console.log(this.yPositionLatestReleaseFrameElement)
+      }
+
+
     });
   }
 }

@@ -11,8 +11,7 @@ import { AboutMeComponent } from './pages/about-me/about-me.component';
 
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { LatestReleasesComponent } from './components/latest-releases/latest-releases.component';
-import { NewestReleaseComponent } from './components/latest-releases/newest-release/newest-release.component';
-import { OlderReleasesComponent } from './components/latest-releases/older-releases/older-releases.component';
+
 import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
@@ -24,8 +23,7 @@ import { FooterComponent } from './components/footer/footer.component';
     TracksComponent,
     AboutMeComponent,
     LatestReleasesComponent,
-    NewestReleaseComponent,
-    OlderReleasesComponent,
+
     FooterComponent,
   ],
   imports: [
