@@ -13,6 +13,7 @@ import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { LatestReleasesComponent } from './components/latest-releases/latest-releases.component';
 
 import { FooterComponent } from './components/footer/footer.component';
+import { MusicPlayerComponent } from './components/music-player/music-player.component';
 
 @NgModule({
   declarations: [
@@ -23,8 +24,8 @@ import { FooterComponent } from './components/footer/footer.component';
     TracksComponent,
     AboutMeComponent,
     LatestReleasesComponent,
-
     FooterComponent,
+    MusicPlayerComponent
   ],
   imports: [
     // RouterModule.forRoot(rout),
